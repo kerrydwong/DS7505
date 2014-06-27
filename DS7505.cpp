@@ -59,7 +59,7 @@ void DS7505::setConfigRegister(byte configByte)
 {
   Wire.beginTransmission(I2CAddr);
   Wire.send(P_CONF);
-  Wire.send(ConfigByte);
+  Wire.send(configByte);
   Wire.endTransmission();
 }
 
